@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Mes prestations</h1>
+  <div class="card">
+      <% @services.each do |service| %>
+        <%= service.prestation.name %>
+        <%= service.prestation.description %>
+        <%= service.prestation.price %>
+      <% end %>
+  </div>
+</div>

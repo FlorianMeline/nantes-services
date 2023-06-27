@@ -1,0 +1,6 @@
+<div class="container">
+  <%= @customer.first_name %>
+  <%= @customer.last_name %>
+  <%= @customer.address %>
+<%= link_to customer_path(@customer), data: {turbo_method: :delete, turbo_confirm: 'Êtes-vous sûr de vouloir supprimer ?' } %>
+SUPPRIMER LE CLIENT

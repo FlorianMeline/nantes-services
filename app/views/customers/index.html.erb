@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Clients</h1>
+  <div class="container-card">
+      <% @customers.each do |customer| %>
+    <div class="customer-card">
+    <div class="customer-name">
+        <%= customer.last_name %>
+        <%= customer.first_name %>
+        <div class="customer-infos">
+        <%= customer.address %>
+        <%= customer.phone_number %>
+        <%= customer.email %>
+        </div>
+        </div>
+    </div>
+    <% end %>
+  </div>
+</div>

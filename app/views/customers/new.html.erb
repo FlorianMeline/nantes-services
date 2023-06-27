@@ -1,0 +1,24 @@
+<form class="simple_form new_customer" id="new_customer" novalidate="novalidate" action="/customers" accept-charset="UTF-8" method="post">
+  <input type="hidden" name="authenticity_token" value="6mcCvU7ZazpIBcJTptw/8y4EucmzccFWli7tFUzX6IJEx8wq6PFC7m4rA1Jy+W4YW1hlhYhSOyhZefWtOM5ofQ==">
+  <div class="mb-3 string optional customer_name">
+    <label class="string optional" for="customer_address">Prénom</label>
+    <input class="form-control string optional" type="text" name="customer[first_name]" id="customer_address">
+  </div>
+  <div class="mb-3 string optional customer_address">
+    <label class="string optional" for="customer_address">Nom</label>
+    <input class="form-control string optional" type="text" name="customer[last_name]" id="customer_address">
+  </div>
+<div class="mb-3 string optional customer_address">
+    <label class="string optional" for="customer_address">Adresse</label>
+    <input class="form-control string optional" type="text" name="customer[address]" id="customer_address">
+  </div>
+  <div class="mb-3 string optional customer_address">
+    <label class="string optional" for="customer_address">N° de téléphone</label>
+    <input class="form-control string optional" type="text" name="customer[phone_number]" id="customer_address">
+  </div>
+  <div class="mb-3 string optional customer_address">
+    <label class="string optional" for="customer_address">email</label>
+    <input class="form-control string optional" type="text" name="customer[email]" id="customer_address">
+  </div>
+  <input type="submit" name="commit" value="Enregistrer" data-disable-with="Create customer">
+</form>
